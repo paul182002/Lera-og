@@ -1,0 +1,157 @@
+<html>
+<body>
+<body background="v1img.jpg" style="background-repeat:no-repeat;background-size:100% 100%">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: lightcyan;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: cyan;
+  color: black;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="boracay.html">Boracay</li>
+  <li><a href="Gabugao Gamay Island.html">Gabugao Gamay Island</li>
+  		
+</ul>
+</a></li>
+</body>
+<br><br><br>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container {
+  position: relative;
+  display: none;
+}
+
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 40px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <font face="Cooper black" size="10" color="black">
+VIGAN </font>
+<br>
+<font face="Arial Black" size="5" color="white">
+Vigan, the UNESCO colonial city, the capital of Ilocos Sur province located on the western coast of the island of Luzon in the Philippines features well-preserved Spanish-era architecture and every year attracts more than a million of local and foreign visitors.
+
+Vigan is a small city charmingly combining the colonial and peaceful atmosphere you will unlikely find anywhere else in the Philippines with traditional noise and buzz of Asian cities. 
+
+There are at least three main reasons why you should consider to visit Vigan. Firstly, Vigan is the best-preserved planned Spanish colonial city in Asia and is a part of the UNESCO World Heritage List; secondly, the cobblestone streets of well-restored Calle Crisologo are traffic free which is such a relief when traveling in Asia so you can focus only on sightseeing and do not worry about your life all the time;and thirdly, fresh empanadas on the night market are too good to give Vigan a miss.
+
+In a nutshell, if you're traveling north of Manila and want to explore the Philippines from a different perspective, Vigan is a right place where to start as the country is not only about beaches and rice terraces.</font>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <img src="v1.jpg" alt="Vigan City" style="width:100%" onclick="myFunction(this);"><center>Vigan City</center>
+  </div>
+ 
+  <div class="column">
+    <img src="SYQUIA MANSION OF PRESIDENT ELPIDIO QUIRINO.v1.jpg" alt="SYQUIA MANSION OF PRESIDENT ELPIDIO QUIRINO
+" style="width:100%" onclick="myFunction(this);"><br><center>SYQUIA MANSION OF PRESIDENT ELPIDIO QUIRINO</center>
+  </div>
+  
+  <div class="column">
+    <img src="Bantay Churchv1.jpg" alt=" Bantay Church" style="width:100%" onclick="myFunction(this);"><br><center>BANTAY CHURCH</center>
+  </div>
+  <div class="column">
+    <img src="RG Jar Factoryv1.jpg" alt=" RG Jar Factory" style="width:100%" onclick="myFunction(this);"><br><center>RG Jar Factory</center>
+  </div>
+ 
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>

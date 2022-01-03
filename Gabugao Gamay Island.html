@@ -1,0 +1,152 @@
+<html>
+<body>
+<body background="Cabugao Gamay Island.jpg" style="background-repeat:no-repeat;background-size:100% 100%">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: lightcyan;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: cyan;
+  color: black;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="Vigan.html">Vigan</li>
+  <li><a href="boracay.html">Boracay</li>
+  		
+</ul>
+</a></li>
+</body>
+<br><br><br>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container {
+  position: relative;
+  display: none;
+}
+
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 40px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <font face="Cooper black" size="10" color="black">
+Cabugao Gamay Island</font>
+<br>
+<font face="Arial black" size="5" color="black">Cabugao Gamay Island is another famous attraction when you go island hopping. ... All of the islands that you can go to while staying in Gigantes Island have pristine beaches and cyan waters that are surely inviting. Antonia Beach has a lot of water activities. You can go kayaking, banana boat ride, and jetski too.
+</font>
+</div>
+
+
+
+<div class="row">
+  <div class="column">
+    <img src="islandhoppingc1.jpg" alt="islandhopping" style="width:100%" onclick="myFunction(this);"><center>island hopping</center>
+  </div>
+ 
+  <div class="column">
+    <img src="kayakingc1.jpg" alt="kayaking
+" style="width:100%" onclick="myFunction(this);"><br><center>kayaking</center>
+  </div>
+  
+  <div class="column">
+    <img src="bananaboatc1.jpg" alt="banana boat ride" style="width:100%" onclick="myFunction(this);"><br><center>banana boat ride</center>
+  </div>
+  <div class="column">
+    <img src="jetskic1.jpg" alt="jetski" style="width:100%" onclick="myFunction(this);"><br><center>jetski</center>
+  </div>
+ 
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
